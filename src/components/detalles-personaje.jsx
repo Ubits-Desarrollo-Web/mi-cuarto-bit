@@ -4,6 +4,12 @@ import { useNavigate } from "react-router-dom";
 const Detalles = ({ personaje }) => {
   const { name = "", episode = [], image = "" } = personaje;
 
+  const navigate = useNavigate();
+
+  const volver = () => {
+    navigate("/");
+  };
+
   return (
     <div>
       {!personaje ? (
@@ -31,7 +37,9 @@ const Detalles = ({ personaje }) => {
       <div className="Volver">
         <button
           className="BotonEstilado"
-          onClick={() => {}}
+          onClick={() => {
+            volver();
+          }}
         >
           Volver
         </button>

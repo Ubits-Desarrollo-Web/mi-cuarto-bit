@@ -5,6 +5,8 @@ import NavBar from "./navbar";
 const Layout = () => {
   return (
     <>
+      <NavBar />
+      <Outlet />
     </>
   );
 };

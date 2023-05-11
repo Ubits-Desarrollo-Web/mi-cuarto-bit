@@ -42,4 +42,12 @@ const ContenedorDetalles = () => {
   );
 };
 
-export default ContenedorDetalles;
+const DetallesErrorBoundary = () => {
+  return (
+    <ErrorBoundary>
+      <ContenedorDetalles />
+    </ErrorBoundary>
+  );
+};
+
+export default DetallesErrorBoundary;
